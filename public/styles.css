@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(37, 37, 37);
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.homeBtn {
+    border-style: none;
+}
+
+button {
+    border-style: none;
+}
+
+div {
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+.content {
+    height: 100px;
+}
