@@ -6,21 +6,36 @@ body {
     text-align: center;
 }
 
-.homeBtn {
-    border-style: none;
+.main-wrapper {
+    margin-top: 100px;
 }
 
-button {
-    border-style: none;
+.nav-link {
+    position: relative;
 }
 
-div {
-    box-sizing: border-box;
-    height: auto;
-    width: auto;
-    margin: 0 auto;
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(20, 20, 206);
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-.content {
-    height: 100px;
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+@media (max-width: 991px) 
+{
+    .navbar-text {
+        color: black;
+    }
+    .navbar-text:hover {
+        color: black;
+    }
 }
