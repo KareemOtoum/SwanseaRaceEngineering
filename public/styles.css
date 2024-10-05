@@ -17,17 +17,19 @@ body {
 .nav-link::after {
     content: '';
     opacity: 0;
-    transition: all 0.2s;
+    transition: all 0.4s;
     height: 2px;
-    width: 100%;
+    width: 0%;
     background-color: rgb(20, 20, 206);
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
 }
 
 .nav-link:hover::after {
     opacity: 1;
+    width: 80%;
+    left: 10%;
 }
 
 @media (max-width: 991px) 
@@ -37,5 +39,9 @@ body {
     }
     .navbar-text:hover {
         color: black;
+    }
+    .nav-link {
+        width: 35%;
+        margin: auto;
     }
 }
