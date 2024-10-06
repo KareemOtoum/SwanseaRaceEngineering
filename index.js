@@ -69,6 +69,12 @@ app.get("/", (req, res) =>
     res.render("index.ejs", { team});
 })
 
+
+app.get("/history", (req, res) =>
+{
+    res.render("history.ejs");
+})
+
 app.listen(port, () =>
 {
     console.log("Started App on port " + port);
