@@ -4,10 +4,17 @@ body {
     font-optical-sizing: auto;
     color: rgb(37, 37, 37);
     text-align: center;
+    box-sizing: border-box;
 }
 
 .navbar {
-    background-color: rgba(37, 37, 37, 1);
+    background-color: rgba(22, 22, 22, 0);
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    background-color: rgba(22, 22, 22, 1);
+    box-shadow: 0 3px 10px rgba(22, 22, 22, 15);
 }
 
 .navbar-brand {
@@ -27,7 +34,7 @@ body {
 }
 
 .sidebar {
-    background-color: rgba(37, 37, 37, 1);
+    background-color: rgb(22, 22, 22);
 }
 
 .offcanvas-title {
@@ -61,11 +68,12 @@ body {
 }
 
 #main-carousel {
-    border-bottom: 8px solid blue;
+    border-bottom: 8px solid rgb(32, 84, 255);
 }
 
 .carousel-text-overlay {
     color: whitesmoke;
+    width: 50%;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -73,8 +81,9 @@ body {
     height: 30%;
 }
 
-.carousel-title {
-    margin-bottom: 10%;
+.carousel-hr {
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .c-item {
@@ -84,7 +93,7 @@ body {
 .c-img {
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.4);
+    filter: brightness(0.3);
 }
 
 
@@ -95,5 +104,8 @@ body {
     }
     .c-item {
         height: 500px;
+    }
+    .carousel-text-overlay {
+        width: 80%;
     }
 }

@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="teamshowcase.css">
+    <link rel="stylesheet" href="carshowcase.css">
 </head>
 <body class="main-wrapper">
     <%- include('navbar.ejs') %>
@@ -41,9 +42,36 @@
 
         <div class="carousel-text-overlay">
             <h1 class="carousel-title">Formula Student</h1>
-            <p class="carousel-caption">Formula Student is Europe’s most established educational motorsport competition</p>
+            <hr class="carousel-hr">
+            Formula Student is Europe’s most established educational motorsport competition,
+            Universities from across the globe are challenged to design and build a single-seat racing car in order to compete in events
         </div>
     </div>
 
+    <!--Team Showcase-->
+    <% if(locals.team) { %>
+        <div class="team-wrapper">
+
+            <h1>Swansea University Team</h1>
+
+            <div class="members">
+                <% for(let i = 0; i <= 1; i++){ %>
+                    <div class="members-slide">
+                        <% team.forEach(member => {%>
+                            <div class="member-box">
+                                <img src="<%= "memberpics/" + member.name + ".jpeg"%>" alt="" class="member-pic">
+                                <h5 class="member-name"><%= member.name %></h4>
+                                <h6 class="member-role"><%= member.role %></h6>
+                            </div>
+                        <% }); %>
+                    </div>
+                <% }; %>
+            </div>
+        </div>
+    <% } %>
+
+    <div class="car-wrapper">
+
+    </div>
 </body>
 </html>

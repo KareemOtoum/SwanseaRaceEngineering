@@ -5,7 +5,7 @@
 
       <a class="navbar-brand fs-4" href="/">
         <img src="logos/SURElogo.png" alt="" class="navbar-logo">
-        <p class="navbar-logo-text">SURE</p></a>
+        <p class="navbar-logo-text">Swansea University Race Engineering</p></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,14 +16,14 @@
         <div class="offcanvas-header text-black">
 
           <!--Sidebar title-->
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Swansea Formula Student</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
 
-          <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link navbar-text" href="#">Home</a>
+              <a class="nav-link navbar-text active" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navbar-text" href="#">History</a>
@@ -42,3 +42,14 @@
       </div>
     </div>
   </nav>
+  <script>
+    const navEl = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () =>{
+      if(window.scrollY >= 200) {
+        navEl.classList.add('navbar-scrolled');
+      } else if(window.scrollY < 200){
+        navEl.classList.remove('navbar-scrolled');
+      }
+    });
+  </script>
