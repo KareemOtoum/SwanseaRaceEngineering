@@ -64,15 +64,19 @@ const team = [
     },
 ]
 
+var pageIndex = 0;
+
 app.get("/", (req, res) =>
 {
-    res.render("index.ejs", { team});
+    pageIndex = 0;
+    res.render("index.ejs", { team, pageIndex});
 })
 
 
-app.get("/history", (req, res) =>
+app.get("/about", (req, res) =>
 {
-    res.render("history.ejs");
+    pageIndex = 1;
+    res.render("about.ejs", {pageIndex});
 })
 
 app.listen(port, () =>

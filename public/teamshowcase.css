@@ -22,7 +22,7 @@
 
 .member-box {
     background-color: rgb(201, 201, 201);
-    border-left: 5px groove rgb(32, 84, 255);
+    border-left: 5px groove rgb(255, 48, 48);
     height: 200px;
     width: 200px;
     flex-wrap: nowrap;
