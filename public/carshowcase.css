@@ -1,11 +1,14 @@
 .car-wrapper {
-    height: 2000px;
+    height: 1700px;
     width: 100%;
     margin-top: 25%;
+    background-color: rgb(22, 22, 22);
+    padding-top: 40px;
 }
 
 .car-wrapper-title {
     margin: 40px 0;
+    color: whitesmoke;
 }
 
 .car-box-right {
@@ -14,7 +17,7 @@
     background-color: rgb(230, 230, 230);
     width: 80%;
     border-radius: 10px;
-    border-left: 10px solid rgb(255, 48, 48);
+    border-left: 20px solid rgb(255, 48, 48);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
@@ -24,7 +27,7 @@
     background-color: rgb(230, 230, 230);
     width: 80%;
     border-radius: 10px;
-    border-right: 10px solid rgb(255, 48, 48);
+    border-right: 20px solid rgb(255, 48, 48);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
@@ -69,9 +72,10 @@
     object-fit: cover;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 700px) {
     .car-wrapper {
         margin-top: 90%;
+        height: 1000px;
     }
 
     .car-box-right-title {
@@ -88,5 +92,11 @@
     
     .car-box-left-text {
         font-size:3vw;
+    }
+}
+
+@media (max-width: 1400px) {
+    .car-wrapper {
+        height: 1400px;
     }
 }

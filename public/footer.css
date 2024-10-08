@@ -1,0 +1,16 @@
+.footer-wrapper {
+    background-color: rgb(22, 22, 22);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: whitesmoke;
+}
+
+.swansea-logo {
+    height: 50%;
+    object-fit: cover;
+}

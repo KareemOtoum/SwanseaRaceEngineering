@@ -1,0 +1,33 @@
+.sponsor-wrapper {
+    margin: 0;
+    padding: 40px;
+}
+
+#sponsor-title {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+#first-sponsor-box {
+    border-color: rgb(238, 166, 11);
+    margin: 0 0 1% 10%;
+    width: 50%;
+    height: fit-content;
+}
+
+#sponsor-box-title {
+    margin: 4%;
+}
+
+#sponsor-box-text {
+    margin: 2%;
+}
+
+@media (max-width: 700px) {
+    .sponsor-wrapper {
+        margin-top: 50px;
+    }
+    #first-sponsor-box {
+        width: 80%;
+    }
+}
