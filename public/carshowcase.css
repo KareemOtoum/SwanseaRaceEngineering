@@ -55,17 +55,19 @@
 
 .car-box-img-right {
     width: 40%;
-    height: fit-content;
+    height: auto;
     margin: 10px;
     border-radius: 1%;
     border-left: 5px solid rgb(22, 22, 22);
+    object-fit: cover;
 }
 .car-box-img-left {
     width: 40%;
-    height: fit-content;
+    height: auto;
     margin: 10px;
     border-radius: 1%;
     border-right: 5px solid rgb(22, 22, 22);
+    object-fit: cover;
 }
 
 @media (max-width: 1400px) {
@@ -74,18 +76,18 @@
     }
 
     .car-box-right-title {
-        font-size:3vw;
+        font-size:4vw;
     }
     
     .car-box-right-text {
-        font-size:2vw;
-    }
-    
-    .car-box-left-title {
         font-size:3vw;
     }
     
+    .car-box-left-title {
+        font-size:4vw;
+    }
+    
     .car-box-left-text {
-        font-size:2vw;
+        font-size:3vw;
     }
 }
