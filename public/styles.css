@@ -126,6 +126,30 @@ body {
     color: rgb(255, 86, 86);
 }
 
+.socials-wrapper {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    left: 1%;
+}
+
+.navbar-social {
+    height: 40px;
+    object-fit: cover;
+    margin: 0 10px;
+}
+
+
+@media (max-width: 1800px) {
+    .navbar-email {
+        top: 0%;
+    }
+    .socials-wrapper {
+        top: 20%;
+        left: 35%;
+    }
+}
+
 @media (max-width: 991px) {
     .nav-link {
         width: 35%;
@@ -137,11 +161,9 @@ body {
     .carousel-text-overlay {
         width: 80%;
     }
-}
-
-@media (max-width: 1800px) {
-    .navbar-email {
-        top: 0%;
+    .socials-wrapper {
+        top: 40%;
+        left: 20%;
     }
 }
 
