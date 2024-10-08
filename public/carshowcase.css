@@ -2,11 +2,10 @@
     height: 2000px;
     width: 100%;
     margin-top: 25%;
-    padding: 0 2%;
 }
 
 .car-wrapper-title {
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .car-box-right {
@@ -15,7 +14,7 @@
     background-color: rgb(230, 230, 230);
     width: 80%;
     border-radius: 10px;
-    border-right: 10px solid rgb(255, 48, 48);
+    border-left: 10px solid rgb(255, 48, 48);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
@@ -25,7 +24,7 @@
     background-color: rgb(230, 230, 230);
     width: 80%;
     border-radius: 10px;
-    border-left: 10px solid rgb(255, 48, 48);
+    border-right: 10px solid rgb(255, 48, 48);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
@@ -54,7 +53,7 @@
 }
 
 .car-box-img-right {
-    width: 40%;
+    width: 20%;
     height: auto;
     margin: 10px;
     border-radius: 1%;
@@ -62,7 +61,7 @@
     object-fit: cover;
 }
 .car-box-img-left {
-    width: 40%;
+    width: 20%;
     height: auto;
     margin: 10px;
     border-radius: 1%;
