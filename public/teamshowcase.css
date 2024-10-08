@@ -3,6 +3,7 @@
     height: 100px;
     padding-top: 5%;
     margin: 0;
+    display: block;
 }
 
 @keyframes slide {
