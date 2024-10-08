@@ -8,6 +8,11 @@ app.use(express.static("public"));
 
 const team = [ 
     {
+        name: "Kareem Otoum",
+        role: "Website Developer",
+        image: ""
+    },
+    {
         name: "Zaine Khizer",
         role: "Team Principal",
         image: ""
