@@ -130,7 +130,7 @@ body {
     display: flex;
     position: absolute;
     justify-content: flex-start;
-    left: 1%;
+    left: 5%;
 }
 
 .navbar-social {
@@ -139,6 +139,44 @@ body {
     margin: 0 10px;
 }
 
+.home-buttons {
+    display: flex;
+    position: relative;
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+
+.home-button {
+    position: relative;
+    flex-grow: 1;
+}
+
+.home-button-title {
+    font-size: 2vw;
+    position: absolute;
+    z-index: 4;
+    top: 40%;
+    left: 35%;
+    color: whitesmoke;
+    background-color: rgb(22, 22, 22);
+}
+
+.home-button-img {
+    position: relative;
+    transition: all 0.2s;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4);
+    border-top: 10px solid rgb(77, 77, 77);
+    border-bottom: 10px solid rgb(77, 77, 77);
+}
+
+.home-button-img:hover {
+    z-index: 4;
+    transform: scale(1.03);
+    border-top: none;
+    border-bottom: none;
+}
 
 @media (max-width: 1800px) {
     .navbar-email {
@@ -163,7 +201,10 @@ body {
     }
     .socials-wrapper {
         top: 40%;
-        left: 20%;
+        left: 33%;
+    }
+    .home-buttons {
+        margin-top: 50%;
     }
 }
 
@@ -181,5 +222,8 @@ body {
     .navbar-text {
         padding: 5px 0;
         margin: 10px auto;
+    }
+    .home-buttons {
+        margin-top: 80%;
     }
 }

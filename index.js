@@ -84,6 +84,18 @@ app.get("/about", (req, res) =>
     res.render("about.ejs", {pageIndex});
 })
 
+app.get("/car", (req, res) =>
+{
+    pageIndex = 2;
+    res.render("car.ejs", {pageIndex});
+})
+
+app.get("/sponsors", (req, res) =>
+{
+    pageIndex = 3;
+    res.render("sponsors.ejs", {pageIndex});
+})
+
 app.listen(port, () =>
 {
     console.log("Started App on port " + port);
