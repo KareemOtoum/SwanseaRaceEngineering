@@ -226,4 +226,7 @@ body {
     .home-buttons {
         margin-top: 80%;
     }
+    .home-button-title {
+        font-size: 4vw;
+    }
 }
