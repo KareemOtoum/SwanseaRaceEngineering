@@ -5,6 +5,14 @@
     padding-top: 40px;
 }
 
+#about-wrapper {
+    height: 1000px;
+}
+
+#about-box {
+    border-left-color: rgb(175, 175, 175);
+}
+
 .car-wrapper-title {
     margin: 40px 0;
     color: whitesmoke;
@@ -75,6 +83,11 @@
     .car-wrapper {
         margin-top: 90%;
         height: 1000px;
+    }
+
+    #about-wrapper {
+        margin-top: 0%;
+        height: 700px;
     }
 
     .car-box-right-title {
