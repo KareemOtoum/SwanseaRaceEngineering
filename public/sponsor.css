@@ -3,6 +3,13 @@
     padding: 40px;
 }
 
+#sponsor-boxes {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #sponsor-title {
     margin-bottom: 60px;
     margin-top: 60px;
@@ -10,9 +17,9 @@
 
 #first-sponsor-box {
     border-color: rgb(238, 166, 11);
-    margin: 0 0 1% 10%;
-    width: 50%;
+    width: 40%;
     height: fit-content;
+    margin: 10px 10px;
 }
 
 #sponsor-box-title {
@@ -32,6 +39,7 @@
         margin-top: 50px;
     }
     #first-sponsor-box {
+        
         width: 80%;
     }
 }

@@ -23,7 +23,7 @@ const team = [
         image: ""
     },
     {
-        name: "Warwick Darden",
+        name: "Warwick Daden",
         role: "Head of Design",
         image: ""
     },,
