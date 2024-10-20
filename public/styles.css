@@ -118,13 +118,6 @@ body {
     position: absolute;
 }
 
-.navbar-email {
-    transition: none;
-    position: absolute;
-    right: 1%;
-    top: 37%;
-    color: rgb(255, 86, 86);
-}
 
 .socials-wrapper {
     display: flex;
@@ -179,9 +172,6 @@ body {
 }
 
 @media (max-width: 1800px) {
-    .navbar-email {
-        top: 0%;
-    }
     .socials-wrapper {
         top: 20%;
         left: 35%;
@@ -209,11 +199,6 @@ body {
 }
 
 @media (max-width: 572px) {
-    .navbar-email {
-        top: 2%;
-        left: 20%;
-        width: 63%;
-    }
     .sidebar-logo {
         visibility: visible;
         left: 1%;
