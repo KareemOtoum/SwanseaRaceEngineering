@@ -18,6 +18,7 @@
 .navbar-email {
     color: rgb(255, 48, 48);
     margin-right: 10px;
+    font-size: 0.9vw;
 }
 
 .contact-wrapper {
@@ -30,6 +31,29 @@
     height: 24px;
 }
 
-.phone-section {
-    margin-top: 30px;
+.address {
+    margin-top: 15px;
+    font-size: 0.75vw;
+    color: rgb(255, 48, 48);
+    overflow: hidden;
+}
+
+.contact-title {
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 700px) {
+    .navbar-email {
+        font-size: 3vw;
+    }
+    .address {
+        margin-top: 5px;
+        font-size: 3vw;
+    }
 }
