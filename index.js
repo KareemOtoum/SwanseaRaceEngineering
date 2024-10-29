@@ -96,6 +96,12 @@ app.get("/sponsors", (req, res) =>
     res.render("sponsors.ejs", {pageIndex});
 })
 
+app.get("/robot.txt", (req, res) =>
+{
+    res.send("Disallow: robot detected");
+})
+    
+
 app.listen(port, () =>
 {
     console.log("Started App on port " + port);
