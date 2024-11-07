@@ -1,16 +1,22 @@
 .car-wrapper {
-    height: 4200px;
+    height: 5400px;
     width: 100%;
     background-color: rgb(22, 22, 22);
     padding-top: 40px;
 }
 
 #about-wrapper {
-    height: 1000px;
+    height: 3000px;
 }
 
 #about-box {
     border-color: rgb(104, 104, 104);   
+}
+
+#about-box-tp{
+    background: none;
+    border: none;
+    color: whitesmoke;
 }
 
 .info-icon {
@@ -86,35 +92,10 @@
 }
 
 .about-text {
-    font-size: 1.3vw;
+    font-size: 1.6vw;
 }
 
-@media (max-width: 700px) {
-    .car-wrapper {
-        height: 3000px;
-    }
 
-    #about-wrapper {
-        margin-top: 0%;
-        height: 800px;
-    }
-
-    .car-box-right-title {
-        font-size:4vw;
-    }
-    
-    .car-box-right-text {
-        font-size:3vw;
-    }
-    
-    .car-box-left-title {
-        font-size:4vw;
-    }
-    
-    .car-box-left-text {
-        font-size:3vw;
-    }
-}
 
 @media (max-width: 1000px) {
     .car-box-right-title {
@@ -136,6 +117,35 @@
 
 @media (max-width: 1400px) {
     .car-wrapper {
-        height: 3200px;
+        height: 3800px;
+    }
+    #about-wrapper{
+        height: 2000px;
+    }
+}
+@media (max-width: 700px) {
+    .car-wrapper {
+        height: 2000px;
+    } 
+
+    #about-wrapper {
+        margin-top: 0%;
+        height: 1200px;
+    }
+
+    .car-box-right-title {
+        font-size:4vw;
+    }
+    
+    .car-box-right-text {
+        font-size:2vw;
+    }
+    
+    .car-box-left-title {
+        font-size:4vw;
+    }
+    
+    .car-box-left-text {
+        font-size:2vw;
     }
 }
